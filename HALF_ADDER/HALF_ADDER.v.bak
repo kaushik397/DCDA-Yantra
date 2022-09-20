@@ -1,0 +1,7 @@
+module HALF_ADDDER(
+input a,b,
+output sum,c_out);
+assign sum = a^b;
+assign c_out = a & b;
+endmodule 
+// this is dataflow model for designing half adder. Happy coding.

@@ -1,0 +1,9 @@
+|HALF_ADDER
+A => Sum.IN0
+A => C_out.IN0
+B => Sum.IN1
+B => C_out.IN1
+Sum << Sum.DB_MAX_OUTPUT_PORT_TYPE
+C_out << C_out.DB_MAX_OUTPUT_PORT_TYPE
+
+

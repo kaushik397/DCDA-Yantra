@@ -1,0 +1,14 @@
+vendor_name = ModelSim
+source_file = 1, D:/Projects/ROBOTICS-COMP/HALF_ADDER/HALF_ADDER.v
+source_file = 1, D:/Projects/ROBOTICS-COMP/HALF_ADDER/db/HALF_ADDER.cbx.xml
+design_name = HALF_ADDER
+instance = comp, \Sum~output , Sum~output, HALF_ADDER, 1
+instance = comp, \C_out~output , C_out~output, HALF_ADDER, 1
+instance = comp, \A~input , A~input, HALF_ADDER, 1
+instance = comp, \B~input , B~input, HALF_ADDER, 1
+instance = comp, \Sum~0 , Sum~0, HALF_ADDER, 1
+instance = comp, \C_out~0 , C_out~0, HALF_ADDER, 1
+design_name = hard_block
+instance = comp, \~ALTERA_ASDO_DATA1~~ibuf , ~ALTERA_ASDO_DATA1~~ibuf, hard_block, 1
+instance = comp, \~ALTERA_FLASH_nCE_nCSO~~ibuf , ~ALTERA_FLASH_nCE_nCSO~~ibuf, hard_block, 1
+instance = comp, \~ALTERA_DATA0~~ibuf , ~ALTERA_DATA0~~ibuf, hard_block, 1

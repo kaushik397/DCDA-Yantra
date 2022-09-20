@@ -1,0 +1,17 @@
+module HALF_ADDER_tb;
+reg A;reg B;
+wire c_out;
+wire sum;
+// Defining unit under test i.e AND_GATE
+HALF_ADDDER uut (.A(A) ,.B(B));
+// Assigning all possible states for input A and B
+initial begin
+
+A = 0; B = 0; #100;
+A = 0; B = 1; #100;
+A = 1; B = 0; #100;
+A = 1; B = 1; #100;
+end
+endmodule
+// this code is for testing my half adder code and viewing the results
+// ONLY FOR TESTING POURPUS 
