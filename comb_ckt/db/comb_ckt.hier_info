@@ -1,0 +1,12 @@
+|comb_ckt
+out <= <GND>
+D1 => ~NO_FANOUT~
+D2 => ~NO_FANOUT~
+D3 => ~NO_FANOUT~
+D4 => ~NO_FANOUT~
+D5 => ~NO_FANOUT~
+D6 => ~NO_FANOUT~
+D7 => ~NO_FANOUT~
+D0 => ~NO_FANOUT~
+
+
