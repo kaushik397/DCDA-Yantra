@@ -27,9 +27,14 @@ module Mux_2_to_1(
 
 
 ////////////////////////WRITE YOUR CODE FROM HERE//////////////////// 
-always@(i1,i0,s0)
+always@(i1 or i0 or s0)
+begin 
 
-	y=((i1 & (~s0)) | (i0 & s0));
+if(s0)
+y=i1;
+else
+y = i0;
+end
 
 ////////////////////////YOUR CODE ENDS HERE//////////////////////////
 endmodule

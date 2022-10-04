@@ -1,0 +1,73 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Projects/ROBOTICS-COMP/comb_ckt/simulation/qsim
+vcomb_ckt
+Z1 !s110 1664731329
+!i10b 1
+!s100 WNSW@L5GZ7clF:Q=F9;];0
+I4UE7KZib?h76]@B8_ic>a1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1664731328
+Z4 8comb_ckt.vo
+Z5 Fcomb_ckt.vo
+L0 32
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1664731329.000000
+Z8 !s107 comb_ckt.vo|
+Z9 !s90 -work|work|comb_ckt.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vcomb_ckt_vlg_vec_tst
+R1
+!i10b 1
+!s100 KD>HX]1U6W2gDN1j058S31
+I]O2UzPadPZY1j4X78n^AE0
+R2
+R0
+w1664731327
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 30
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11
+vhard_block
+R1
+!i10b 1
+!s100 c42U`iAS4:13Cjg]CXhgk3
+Ik=P<dLONcLd^PmKocUM=33
+R2
+R0
+R3
+R4
+R5
+L0 188
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11

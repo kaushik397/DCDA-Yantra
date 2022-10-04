@@ -1,5 +1,5 @@
 Analysis & Synthesis report for comb_ckt
-Sat Oct 01 16:44:39 2022
+Tue Oct 04 12:39:17 2022
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -10,13 +10,7 @@ Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Post-Synthesis Netlist Statistics for Top Partition
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Messages
 
 
 
@@ -43,20 +37,20 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Oct 01 16:44:39 2022       ;
+; Analysis & Synthesis Status        ; Failed - Tue Oct 04 12:39:17 2022           ;
 ; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                      ; comb_ckt                                    ;
-; Top-level Entity Name              ; comb_ckt                                    ;
+; Top-level Entity Name              ; comb_ckt_verilog                            ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 0                                           ;
-;     Total combinational functions  ; 0                                           ;
-;     Dedicated logic registers      ; 0                                           ;
-; Total registers                    ; 0                                           ;
-; Total pins                         ; 9                                           ;
-; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0                                           ;
-; Embedded Multiplier 9-bit elements ; 0                                           ;
-; Total PLLs                         ; 0                                           ;
+; Total logic elements               ; N/A until Partition Merge                   ;
+;     Total combinational functions  ; N/A until Partition Merge                   ;
+;     Dedicated logic registers      ; N/A until Partition Merge                   ;
+; Total registers                    ; N/A until Partition Merge                   ;
+; Total pins                         ; N/A until Partition Merge                   ;
+; Total virtual pins                 ; N/A until Partition Merge                   ;
+; Total memory bits                  ; N/A until Partition Merge                   ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
+; Total PLLs                         ; N/A until Partition Merge                   ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -66,7 +60,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; EP4CE22F17C6       ;                    ;
-; Top-level entity name                                            ; comb_ckt           ; comb_ckt           ;
+; Top-level entity name                                            ; comb_ckt_verilog   ; comb_ckt           ;
 ; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -151,8 +145,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 16          ;
+; Maximum allowed            ; 16          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -162,141 +156,42 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                        ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path              ; Library ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------------------+---------+
-; comb_ckt.bdf                     ; yes             ; User Block Diagram/Schematic File  ; D:/E-Yantra/# Files/comb_ckt/comb_ckt.bdf ;         ;
-+----------------------------------+-----------------+------------------------------------+-------------------------------------------+---------+
-
-
-+----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary              ;
-+---------------------------------------------+------------+
-; Resource                                    ; Usage      ;
-+---------------------------------------------+------------+
-;                                             ;            ;
-; Total combinational functions               ; 0          ;
-; Logic element usage by number of LUT inputs ;            ;
-;     -- 4 input functions                    ; 0          ;
-;     -- 3 input functions                    ; 0          ;
-;     -- <=2 input functions                  ; 0          ;
-;                                             ;            ;
-; Logic elements by mode                      ;            ;
-;     -- normal mode                          ; 0          ;
-;     -- arithmetic mode                      ; 0          ;
-;                                             ;            ;
-; Total registers                             ; 0          ;
-;     -- Dedicated logic registers            ; 0          ;
-;     -- I/O registers                        ; 0          ;
-;                                             ;            ;
-; I/O pins                                    ; 9          ;
-;                                             ;            ;
-; Embedded Multiplier 9-bit elements          ; 0          ;
-;                                             ;            ;
-; Maximum fan-out node                        ; out~output ;
-; Maximum fan-out                             ; 1          ;
-; Total fan-out                               ; 9          ;
-; Average fan-out                             ; 0.50       ;
-+---------------------------------------------+------------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                      ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; |comb_ckt                  ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 9    ; 0            ; |comb_ckt           ; comb_ckt    ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 0     ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; boundary_port         ; 9                           ;
-; cycloneiii_lcell_comb ; 1                           ;
-;     normal            ; 1                           ;
-;         0 data inputs ; 1                           ;
-;                       ;                             ;
-; Max LUT depth         ; 0.00                        ;
-; Average LUT depth     ; 0.00                        ;
-+-----------------------+-----------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:00     ;
-+----------------+--------------+
-
-
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Sat Oct 01 16:44:33 2022
+    Info: Processing started: Tue Oct 04 12:39:09 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off comb_ckt -c comb_ckt
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file mux_4_to_1.v
-    Info (12023): Found entity 1: Mux_4_to_1 File: D:/E-Yantra/# Files/comb_ckt/Mux_4_to_1.v Line: 21
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file comb_ckt_verilog.v
+    Info (12023): Found entity 1: comb_ckt_verilog File: D:/Projects/ROBOTICS-COMP/comb_ckt/comb_ckt_verilog.v Line: 20
+Error (10170): Verilog HDL syntax error at Mux_4_to_1.v(21) near text: "module";  expecting ".", or an identifier ("module" is a reserved keyword ). Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: D:/Projects/ROBOTICS-COMP/comb_ckt/Mux_4_to_1.v Line: 21
+Error (10839): Verilog HDL error at Mux_4_to_1.v(21): declaring global objects is a SystemVerilog feature File: D:/Projects/ROBOTICS-COMP/comb_ckt/Mux_4_to_1.v Line: 21
+Error (10839): Verilog HDL error at Mux_4_to_1.v(34): declaring global objects is a SystemVerilog feature File: D:/Projects/ROBOTICS-COMP/comb_ckt/Mux_4_to_1.v Line: 34
+Error (10170): Verilog HDL syntax error at Mux_4_to_1.v(36) near text: "(";  expecting ";". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: D:/Projects/ROBOTICS-COMP/comb_ckt/Mux_4_to_1.v Line: 36
+Error (10170): Verilog HDL syntax error at Mux_4_to_1.v(36) near text: ")";  expecting ";". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: D:/Projects/ROBOTICS-COMP/comb_ckt/Mux_4_to_1.v Line: 36
+Error (10839): Verilog HDL error at Mux_4_to_1.v(36): declaring global objects is a SystemVerilog feature File: D:/Projects/ROBOTICS-COMP/comb_ckt/Mux_4_to_1.v Line: 36
+Error (10170): Verilog HDL syntax error at Mux_4_to_1.v(37) near text: "(";  expecting ";". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: D:/Projects/ROBOTICS-COMP/comb_ckt/Mux_4_to_1.v Line: 37
+Error (10149): Verilog HDL Declaration error at Mux_4_to_1.v(37): identifier "S1" is already declared in the present scope File: D:/Projects/ROBOTICS-COMP/comb_ckt/Mux_4_to_1.v Line: 37
+Error (10170): Verilog HDL syntax error at Mux_4_to_1.v(37) near text: ")";  expecting ";". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: D:/Projects/ROBOTICS-COMP/comb_ckt/Mux_4_to_1.v Line: 37
+Error (10839): Verilog HDL error at Mux_4_to_1.v(37): declaring global objects is a SystemVerilog feature File: D:/Projects/ROBOTICS-COMP/comb_ckt/Mux_4_to_1.v Line: 37
+Error (10170): Verilog HDL syntax error at Mux_4_to_1.v(38) near text: "(";  expecting ";". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: D:/Projects/ROBOTICS-COMP/comb_ckt/Mux_4_to_1.v Line: 38
+Error (10149): Verilog HDL Declaration error at Mux_4_to_1.v(38): identifier "mux1" is already declared in the present scope File: D:/Projects/ROBOTICS-COMP/comb_ckt/Mux_4_to_1.v Line: 38
+Error (10149): Verilog HDL Declaration error at Mux_4_to_1.v(38): identifier "mux2" is already declared in the present scope File: D:/Projects/ROBOTICS-COMP/comb_ckt/Mux_4_to_1.v Line: 38
+Error (10170): Verilog HDL syntax error at Mux_4_to_1.v(38) near text: ")";  expecting ";". Check for and fix any syntax errors that appear immediately before or at the specified keyword. The Intel FPGA Knowledge Database contains many articles with specific details on how to resolve this error. Visit the Knowledge Database at https://www.altera.com/support/support-resources/knowledge-base/search.html and search for this specific error message number. File: D:/Projects/ROBOTICS-COMP/comb_ckt/Mux_4_to_1.v Line: 38
+Error (10839): Verilog HDL error at Mux_4_to_1.v(38): declaring global objects is a SystemVerilog feature File: D:/Projects/ROBOTICS-COMP/comb_ckt/Mux_4_to_1.v Line: 38
+Info (12021): Found 0 design units, including 0 entities, in source file mux_4_to_1.v
 Info (12021): Found 1 design units, including 1 entities, in source file mux_2_to_1.v
-    Info (12023): Found entity 1: Mux_2_to_1 File: D:/E-Yantra/# Files/comb_ckt/Mux_2_to_1.v Line: 21
+    Info (12023): Found entity 1: Mux_2_to_1 File: D:/Projects/ROBOTICS-COMP/comb_ckt/Mux_2_to_1.v Line: 21
 Info (12021): Found 1 design units, including 1 entities, in source file comb_ckt.bdf
     Info (12023): Found entity 1: comb_ckt
-Info (12127): Elaborating entity "comb_ckt" for the top level hierarchy
-Warning (275043): Pin "out" is missing source
-Warning (275009): Pin "D1" not connected
-Warning (275009): Pin "D2" not connected
-Warning (275009): Pin "D3" not connected
-Warning (275009): Pin "D4" not connected
-Warning (275009): Pin "D5" not connected
-Warning (275009): Pin "D6" not connected
-Warning (275009): Pin "D7" not connected
-Warning (275009): Pin "D0" not connected
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "out" is stuck at GND
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 8 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "D1"
-    Warning (15610): No output dependent on input pin "D2"
-    Warning (15610): No output dependent on input pin "D3"
-    Warning (15610): No output dependent on input pin "D4"
-    Warning (15610): No output dependent on input pin "D5"
-    Warning (15610): No output dependent on input pin "D6"
-    Warning (15610): No output dependent on input pin "D7"
-    Warning (15610): No output dependent on input pin "D0"
-Info (21057): Implemented 9 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 8 input pins
-    Info (21059): Implemented 1 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 21 warnings
-    Info: Peak virtual memory: 4729 megabytes
-    Info: Processing ended: Sat Oct 01 16:44:39 2022
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:16
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 15 errors, 1 warning
+    Error: Peak virtual memory: 4701 megabytes
+    Error: Processing ended: Tue Oct 04 12:39:18 2022
+    Error: Elapsed time: 00:00:09
+    Error: Total CPU time (on all processors): 00:00:20
 
 

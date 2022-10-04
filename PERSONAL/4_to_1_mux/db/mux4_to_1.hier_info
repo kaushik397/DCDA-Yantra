@@ -1,0 +1,31 @@
+|mux4_to_1
+out << mux2x1:mux_3.port0
+i0 => i0.IN1
+i1 => i1.IN1
+i2 => i2.IN1
+i3 => i3.IN1
+s1 => s1.IN2
+s0 => s0.IN1
+
+
+|mux4_to_1|mux2x1:mux_1
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+a => out.DATAA
+b => out.DATAB
+s => out.OUTPUTSELECT
+
+
+|mux4_to_1|mux2x1:mux_2
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+a => out.DATAA
+b => out.DATAB
+s => out.OUTPUTSELECT
+
+
+|mux4_to_1|mux2x1:mux_3
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+a => out.DATAA
+b => out.DATAB
+s => out.OUTPUTSELECT
+
+

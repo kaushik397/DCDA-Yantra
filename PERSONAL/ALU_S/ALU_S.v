@@ -3,8 +3,8 @@ module ALU_S
 input [1:0]a,b,// inputs for A,B
 input [1:0]s, // input selector operator
 input en,clk, //define clock and enable to establish control
-output [3:0] y, // define the output as 4 bit output
-output carry, zero//define other outputs carry and zero
+output reg [3:0] y, // define the output as 4 bit output
+output reg carry, zero//define other outputs carry and zero
 );
 
 reg [1:0] a_in;// store A into local reg
@@ -41,10 +41,16 @@ case(s)
 
 2'd0:
 begin
-out_y={2 'd0,(a_in+b_in)};
+out_y=(a_in+b_in);
 flags[0]=out_y[2];
 end
-
+2'd1:
+begin
+out_y=(a_in-b_in);
+end
+2'd2:out_y =( a_in / b_in );
+2'd3:out_y =( a_in * b_in );
+default : out_y =4'd0;
 endcase 
 if( out_y==0)
 flags[1]=1;

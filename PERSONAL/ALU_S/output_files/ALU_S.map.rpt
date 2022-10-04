@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ALU_S
-Sat Sep 24 12:34:22 2022
+Mon Sep 26 09:19:04 2022
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Sat Sep 24 12:34:22 2022           ;
+; Analysis & Synthesis Status        ; Failed - Mon Sep 26 09:19:04 2022           ;
 ; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name                      ; ALU_S                                       ;
 ; Top-level Entity Name              ; ALU_S                                       ;
@@ -162,22 +162,19 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Sat Sep 24 12:34:14 2022
+    Info: Processing started: Mon Sep 26 09:18:53 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU_S -c ALU_S
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file alu_s.v
     Info (12023): Found entity 1: ALU_S File: D:/Projects/ROBOTICS-COMP/PERSONAL/ALU_S/ALU_S.v Line: 1
-Error (10137): Verilog HDL Procedural Assignment error at ALU_S.v(22): object "y" on left-hand side of assignment must have a variable data type File: D:/Projects/ROBOTICS-COMP/PERSONAL/ALU_S/ALU_S.v Line: 22
-Error (10137): Verilog HDL Procedural Assignment error at ALU_S.v(23): object "carry" on left-hand side of assignment must have a variable data type File: D:/Projects/ROBOTICS-COMP/PERSONAL/ALU_S/ALU_S.v Line: 23
-Error (10137): Verilog HDL Procedural Assignment error at ALU_S.v(24): object "zero" on left-hand side of assignment must have a variable data type File: D:/Projects/ROBOTICS-COMP/PERSONAL/ALU_S/ALU_S.v Line: 24
-Error (10137): Verilog HDL Procedural Assignment error at ALU_S.v(30): object "y" on left-hand side of assignment must have a variable data type File: D:/Projects/ROBOTICS-COMP/PERSONAL/ALU_S/ALU_S.v Line: 30
-Error (10137): Verilog HDL Procedural Assignment error at ALU_S.v(31): object "carry" on left-hand side of assignment must have a variable data type File: D:/Projects/ROBOTICS-COMP/PERSONAL/ALU_S/ALU_S.v Line: 31
-Error (10137): Verilog HDL Procedural Assignment error at ALU_S.v(32): object "zero" on left-hand side of assignment must have a variable data type File: D:/Projects/ROBOTICS-COMP/PERSONAL/ALU_S/ALU_S.v Line: 32
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 6 errors, 1 warning
+Info (12127): Elaborating entity "ALU_S" for the top level hierarchy
+Error (10200): Verilog HDL Conditional Statement error at ALU_S.v(18): cannot match operand(s) in the condition to the corresponding edges in the enclosing event control of the always construct File: D:/Projects/ROBOTICS-COMP/PERSONAL/ALU_S/ALU_S.v Line: 18
+Error (12153): Can't elaborate top-level user hierarchy
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 2 errors, 1 warning
     Error: Peak virtual memory: 4704 megabytes
-    Error: Processing ended: Sat Sep 24 12:34:22 2022
-    Error: Elapsed time: 00:00:08
-    Error: Total CPU time (on all processors): 00:00:20
+    Error: Processing ended: Mon Sep 26 09:19:04 2022
+    Error: Elapsed time: 00:00:11
+    Error: Total CPU time (on all processors): 00:00:17
 
 

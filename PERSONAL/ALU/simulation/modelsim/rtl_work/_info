@@ -1,0 +1,33 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Projects/ROBOTICS-COMP/PERSONAL/ALU/simulation/modelsim
+vALU
+!s110 1664078167
+!i10b 1
+!s100 TQHE1f[;^nfa@4G_LG6Om3
+I3VI1kR2PT3RZ?5dc936n?3
+VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1664078066
+8D:/Projects/ROBOTICS-COMP/PERSONAL/ALU/ALU.v
+FD:/Projects/ROBOTICS-COMP/PERSONAL/ALU/ALU.v
+L0 1
+OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1664078167.000000
+!s107 D:/Projects/ROBOTICS-COMP/PERSONAL/ALU/ALU.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Projects/ROBOTICS-COMP/PERSONAL/ALU|D:/Projects/ROBOTICS-COMP/PERSONAL/ALU/ALU.v|
+!i113 1
+o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+D:/Projects/ROBOTICS-COMP/PERSONAL/ALU
+tCvgOpt 0
+n@a@l@u

@@ -165,14 +165,6 @@ https://fpgasoftware.intel.com/eula.
 	)
 )
 (connector
-	(pt 216 368)
-	(pt 304 368)
-)
-(connector
-	(pt 304 368)
-	(pt 304 424)
-)
-(connector
 	(pt 216 400)
 	(pt 264 400)
 )
@@ -248,6 +240,18 @@ https://fpgasoftware.intel.com/eula.
 	(pt 1152 280)
 	(pt 1120 280)
 )
+(connector
+	(pt 216 368)
+	(pt 304 368)
+)
+(connector
+	(pt 304 368)
+	(pt 304 424)
+)
+(connector
+	(pt 304 424)
+	(pt 456 424)
+)
 (text "comb_ckt" (rect 688 -8 785 14)(font "Arial" (font_size 14)))
 (text "Final Output" (rect 1152 248 1241 268)(font "Intel Clear" (font_size 10)))
 (text "Inputs to octal to binary encoder" (rect 40 328 272 348)(font "Intel Clear" (font_size 10)))
@@ -295,7 +299,6 @@ https://fpgasoftware.intel.com/eula.
 (line (pt 600 288)(pt 752 288))
 (line (pt 600 312)(pt 752 312))
 (line (pt 600 336)(pt 752 336))
-(line (pt 304 424)(pt 456 424))
 (line (pt 304 440)(pt 456 440))
 (line (pt 304 456)(pt 456 456))
 (line (pt 304 472)(pt 456 472))

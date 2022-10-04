@@ -1,4 +1,4 @@
-// SB : Task 1A Combinational Circuit
+g // SB : Task 1A Combinational Circuit
 /*
 Instructions
 -------------------
@@ -31,25 +31,11 @@ module Mux_4_to_1(
 
 //component Mux_2_to_1 is
 
+wire mux1,mux2;
 
-
-
-
-
-
-
-
-/*reg out_reg;
-assign out=out_reg;
-always @*
-begin 
-	case({S0,S1})
-		00: out_reg<=I3;
-		01: out_reg<=I2;
-		10: out_reg<=I1;
-		11: out_reg<=I0;
-	endcase
-end*/
+Mux_2_to_1 mux_1(mux1,I0,I1,S1);
+Mux_2_to_1 mux_2(mux2,I2,I3,S1);
+Mux_2_to_1 mux_3(out,mux1,mux2,S0);
 
 ////////////////////////YOUR CODE ENDS HERE//////////////////////////
 endmodule

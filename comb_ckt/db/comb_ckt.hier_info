@@ -1,12 +1,8 @@
-|comb_ckt
-out <= <GND>
-D1 => ~NO_FANOUT~
-D2 => ~NO_FANOUT~
-D3 => ~NO_FANOUT~
-D4 => ~NO_FANOUT~
-D5 => ~NO_FANOUT~
-D6 => ~NO_FANOUT~
-D7 => ~NO_FANOUT~
-D0 => ~NO_FANOUT~
+|Mux_2_to_1
+i1 => y.IN0
+i0 => y.IN0
+s0 => y.IN1
+s0 => y.IN1
+y <= y.DB_MAX_OUTPUT_PORT_TYPE
 
 

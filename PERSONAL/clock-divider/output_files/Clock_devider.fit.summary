@@ -1,0 +1,16 @@
+Fitter Status : Successful - Fri Sep 30 07:58:57 2022
+Quartus Prime Version : 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+Revision Name : Clock_devider
+Top-level Entity Name : Clock_devider
+Family : Cyclone IV E
+Device : EP4CE22F17C6
+Timing Models : Final
+Total logic elements : 35 / 22,320 ( < 1 % )
+    Total combinational functions : 33 / 22,320 ( < 1 % )
+    Dedicated logic registers : 16 / 22,320 ( < 1 % )
+Total registers : 16
+Total pins : 26 / 154 ( 17 % )
+Total virtual pins : 0
+Total memory bits : 0 / 608,256 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
